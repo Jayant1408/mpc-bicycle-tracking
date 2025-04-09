@@ -1,0 +1,10 @@
+# Build and system files
+build/
+*.o
+*.log
+*.csv
+*.gif
+__pycache__/
+*.pyc
+.DS_Store
+

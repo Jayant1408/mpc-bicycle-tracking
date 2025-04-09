@@ -1,0 +1,68 @@
+# simulation:
+#   dt: 0.1
+#   L: 2.5
+#   total_steps: 150
+#   prediction_horizon: 30
+
+
+
+# cost:
+#   Q: [200.0, 200.0, 20.0, 1.0]
+#   R: [0.5, 1.0]
+
+# cost:
+#   Q: [300.0, 300.0, 100.0, 5.0]
+#   R: [1.0, 2.0]
+
+
+# cost:
+#   Q: [250.0, 250.0, 50.0, 50.0]
+#   R: [5.0, 3.0]
+
+# simulation:
+#   dt: 0.1
+#   L: 2.5
+#   total_steps: 150
+#   prediction_horizon: 40
+
+# cost:
+#   Q: [800.0, 1000.0, 200.0, 100.0]   # Tighter x/y and heading
+#   R: [120.0, 5.0]                  # Further slow down over-acceleration
+
+
+# simulation: Sine
+#   dt: 0.1
+#   L: 2.5
+#   total_steps: 150
+#   prediction_horizon: 50
+
+# cost:
+#   Q: [1100.0, 1100.0, 200.0, 100.0]   # Tighter x/y and heading
+#   R: [150.0, 5.0]                  # Further slow down over-acceleration
+
+# initial_state:
+#   x: 0.0
+#   y: 0.0
+#   theta: 0.0
+#   v: 1.0
+
+# trajectory_mode: sine  # or "circle"
+
+
+
+simulation:
+  dt: 0.1
+  L: 2.5
+  total_steps: 150
+  prediction_horizon: 50
+
+cost:
+  Q: [1000.0, 1000.0, 300.0, 50.0]   # Tighter x/y and heading
+  R: [200.0, 10.0]                  # Further slow down over-acceleration
+
+initial_state:
+  x: 0.0
+  y: 0.0
+  theta: 0.0
+  v: 1.0
+trajectory_mode: circle  # or "circle"
